@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <!-- HEADER -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Terry Nye Development Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+<!-- BODY -->
+    <body class="Background">
+        <!-- NAVBAR -->
+        <div class="Navbar">
+            <a class="active" href="#Home">home</a>
+            <a href="#About">about</a>
+            <a href="#GitHub">github</a>
+            <a href="#Contact">contact</a>
+        </div>
+        <br>
+        <br>
+        <!-- END NAVBAR -->
+
+        <!-- BACKGROUND VIDEO -->
+        <div id="Home">
+            <video autoplay muted loop id="Snow_Video">
+                <source src="vid/pexels-niezlyziom-5485148.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <!-- END BACKGROUND VIDEO -->
+
+        <!-- VIDEO TEXT -->
+        <div class="Video_Text">
+            <h1 class="white-text">Terry Nye's Software Development Portfolio</h1>
+            
+                <p class="center">
+                    
+                    <q>Far from being the smartest possible biological species, we are probably better thought of as the stupidest possible biological species capable of starting a technological civilization - a niche we filled because we got there first, not because we are in any sense optimally adapted to it.
+                    </q>
+                    <br> -Nick Bostrom
+                </p>
+            <strong>
+                    <p class="center">
+                    <br> My name is Terry Nye II. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br> Thank you for stopping by, enjoy!
+                </p>
+            </strong>
+        </div>
+        <!-- END VIDEO TEXT -->
+
+        <!-- ABOUT SECTION -->
+        <div class="Row" id="About">
+            <!-- LEFT COLUMN -->
+            <div class="Column_2">
+                <img src="img/gaming.jpg" alt="My cat Pria and dog Molly, being nice for once!">
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_1">
+                <h1>about</h1>
+                <p>
+                    I am a software developer who loves to code! I also love playing and making video games and board games!
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- GITHUB SECTION -->
+        <div class="Row" id="GitHub">
+            <!-- LEFT COLUMN -->
+            <div class="Column_1">
+                <h1>github</h1>
+                <p class="center">
+                    You can view my coding projects on my GitHub profile here:
+                </p>
+                    <p class="center"><a href="https://github.com/tnye02/TN_Dev" target="_blank">terry nye github</a></p>
+                </p>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_2">
+                <a href="https://github.com/tnye02/TN_Dev" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+        <!-- END GITHUB SECTION-->
+
+        <!-- CONTACT SECTION -->
+        <div class="Row" id="Contact">
+            <!-- CONTACT IMAGE, LEFT COLUMN -->
+            <div class="Column_2 Column_tall">
+                <img src="img/cat_and_dog.jpg" alt="Contact_Image">
+            </div>
+            <!-- CONTACT FORM, RIGHT COLUMN -->
+            <div class="Column_1 Column_tall">
+                <h1>contact</h1>
+                <!-- This specifies where and how to send the form data; we are leaving it blank -->
+                <form action="https://formspree.io/f/mpzkdbjy" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert formspree endpoint in the action attribute -->
+                    <label>name: </label>
+                        <input type="text" placeholder="please enter your name here">
+                    <label>email: </label>
+                        <input type="text" id="Email" name="Email" placeholder="please enter your email here">
+                    <label>message: </label>
+                        <input type="text" id="Message" name="Message" placeholder="please write your message here">
+                        <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+        <!-- END CONTACT SECTION -->
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <p>
+                <p class="center">&copy terry nye ii </p>
+            </p>
+        </footer>
+    </body>
+</html>
