@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Phone number validator</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+	</head>
+	<body>
+	<!-- Contact form -->
+	
+	<div class="my_form">
+		<form name="form_1" onsubmit="return validate_Form()">
+			<label for="phone">Phone Number Check (123)456-7890:</label><br><br>
+			<input type="text" id="phone" name="phone" value="Enter a number to see if it is a valid phone number" size="40" onfocus="this.value=''"><br>
+			<br>
+			<input type="submit" value="Validate">
+		</form>
+	</div>
+
+	<script src="JavaScript/phone.js"></script>
+	</body>
+</html>

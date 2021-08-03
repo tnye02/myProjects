@@ -1,0 +1,4 @@
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20210725_171751
+C:\SQL2019\Express_ENU
+C:\Program Files\Microsoft SQL Server\150\SSEI\Resources

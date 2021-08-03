@@ -1,0 +1,41 @@
+p {
+	color: white;
+	font-weight: bolder;
+	text-align: left;
+	text-shadow: 15px 15px 3px DimGrey;
+	font-size: large;
+}
+
+body {
+	opacity: 1;
+	transition: 3s opacity;
+  }
+  
+  body.fade-out {
+	opacity: 0;
+	transition: none;
+  }
+
+  html {
+	background-color: black;
+	scroll-behavior: smooth;
+  }	
+
+  h1 {
+	  color: white;
+	  text-shadow: 15px 15px 5px DimGrey;
+  }
+
+  .navbar ul {
+	  list-style-type:none;
+	  color: white;
+  }
+
+  li {
+	  display: inline;
+  }
+
+  a {
+	  color: white;
+	  text-decoration: none;
+  }

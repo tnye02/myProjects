@@ -1,0 +1,1 @@
+SELECT CardType FROM Sales.CreditCard WHERE CardType LIKE 'Vis%';

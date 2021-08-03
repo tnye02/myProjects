@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Countdown Timer</title>
+		<meta charset="utf-8">
+		
+		<link rel="stylesheet" type="text/css" href="CSS/main_css.css">        
+	</head>
+	<body>
+	<!-- Notes/Comments -->
+
+	<p>How many seconds would you like to set your alarm for?</p>
+	<input id="seconds" value="" />
+	<button onclick="countdown()">Click Here</button>
+	<p id="timer"></p>
+
+	<!--Slideshow Container-->
+	<!--Slide 1-->
+	<div class="sl_ctnr"> 
+	<!-- Full width images with number and caption text-->
+
+		<div class="slides fade">
+			<div class="numbertext">1/4</div>
+			<img src="IMG/img_1.jpg" style="height:500px; width:500px">
+			<div class="text">Mmmm donuts... *drool*</div>
+		</div>
+		<!--Slide 2-->	
+		<div class="slides fade">
+			<div class="numbertext">2/4</div>
+			<img src="img/img_2.jpg" style="height:500px; width:500px">
+			<div class="text">Blue orange? What the...!?</div>
+		</div>
+		<!--Slide 3-->	
+		<div class="slides fade">
+			<div class="numbertext">3/4</div>
+			<img src="img/img_3.jpg" style="height:500px; width:500px">
+			<div class="text">Heads have rolled...</div>
+		</div>
+		<!--Slide 4-->
+		<div class="slides fade">
+			<div class="numbertext">4/4</div>
+			<img src="img/img_4.jpg" style="height:500px; width:500px">
+			<div class="text">Roll for damage.</div>
+		</div>
+
+		<!-- Buttons Next/Previous -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<!-- Dots/Circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+	</div>
+	<script src="JS/main_js.js"></script>
+	</body>
+</html>

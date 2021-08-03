@@ -1,0 +1,17 @@
+.my_form {
+    border: 2px solid black;
+    background-color:darkgrey;
+    padding: 10px;
+    width: 250px;
+}
+
+input {
+    background-color:lightgray;
+}
+
+#question {
+    outline: none;
+    resize: none;
+    background-color:lightgray;
+}
+

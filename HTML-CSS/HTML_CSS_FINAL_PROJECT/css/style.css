@@ -1,5 +1,4 @@
 /**** GENERAL STYLING ****/
-
 body {
     margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
 }
@@ -102,8 +101,8 @@ footer {
     top: 0; /* ensure so space is displayed above the navbar */
     width: 100%; /* Makes the navbar span the entire width of the page */
     z-index: 1; /* Ensures other elements don't display over the navbar */
-    -webkit-animation: moveNav 5s; /* Applies the moveNav animation below for Safari 4.0 - 8.0 */
-    animation: moveNav 5s; /* Applies the moveNav animation for all other browsers */
+    -webkit-animation: moveNav 1s; /* Applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 1s; /* Applies the moveNav animation for all other browsers */
 }
 
 @keyframes moveNav {
@@ -122,12 +121,12 @@ footer {
     font-size: 20px; 
     text-align: center;
     position: relative;
-    -webkit-animation: moveNavText 5.75s;
-    animation: moveNavText 5.75s;
+    -webkit-animation: moveNavText 1.75s;
+    animation: moveNavText 1.75s;
 }
 
 @keyframes moveNavText {
-    from {top: -100vw;} /* Sets the navbar text 100% above the viewport */
+    from {top: -50vw;} /* Sets the navbar text 100% above the viewport */
     to {top: 0vw;} /* Lowers the navbar text onto the navbar */
 }
 

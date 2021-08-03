@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <!-- HEADER -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Terry Nye Development Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+<!-- BODY -->
+    <body class="Background">
+       
+        <!-- NAVBAR -->
+        <div class="Navbar">
+            <a class="active" href="#Home">home</a>
+            <a href="#About">about</a>
+            <a href="#GitHub">github</a>
+            <a href="#Contact" onclick="openForm()">contact</a>
+        </div>
+        <br>
+        <br>
+        <!-- END NAVBAR -->
+
+        <!-- BACKGROUND VIDEO -->
+        <div id="Home">
+            <video autoplay muted loop id="Snow_Video">
+                <source src="vid/pexels-niezlyziom-5485148.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <!-- END BACKGROUND VIDEO -->
+
+        <!-- CONTACT BUTTON -->
+        <div class="contact_sticky">
+            <button class="button" onclick="openForm()">CONTACT</button>
+        </div>        
+
+        <!-- VIDEO TEXT -->
+        <div class="Video_Text">
+            <h1 class="white-text">Terry Nye's Software Development Portfolio</h1>
+            
+                <p class="center">
+                    
+                    <q>Far from being the smartest possible biological species, we are probably better thought of as the stupidest possible biological species capable of starting a technological civilization - a niche we filled because we got there first, not because we are in any sense optimally adapted to it.
+                    </q>
+                    <br> -Nick Bostrom
+                </p>
+            <strong>
+                    <p class="center">
+                    <br> My name is Terry Nye II. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br> Thank you for stopping by, enjoy!
+                </p>
+            </strong>
+        </div>
+        <!-- END VIDEO TEXT -->
+
+        <!-- ABOUT SECTION -->
+        <div class="Row" id="About">
+            <!-- LEFT COLUMN -->
+            <div class="Column_2">
+                <div id="slideshow">
+                    <div>
+                        <img src="img/mp.jpg">
+                    </div>
+                    <div>
+                        <img src="img/gaming.jpg">
+                    </div>
+                    <div>
+                        <img src="img/d&d.jpg">
+                    </div>
+                    <div>
+                        <img src="img/pan.jpg">
+                    </div>
+                    <div>
+                        <img src="img/val.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_1">
+                <h1>about</h1>
+                <p style="font-size:1vw">  <!-- TEXT RESIZED BASED ON SCREENSIZE!!! -->
+                    I am a software developer who loves to code! I also love playing and making video games and board games!
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- GITHUB SECTION -->
+        <div class="Row" id="GitHub">
+            <!-- LEFT COLUMN -->
+            <div class="Column_1">
+                <h1>github</h1>
+                <p class="center">
+                    You can view my coding projects on my GitHub profile here:
+                </p>
+                    <p class="center"><a href="https://github.com/tnye02/TN_Dev" target="_blank">terry nye github</a></p>
+                </p>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_2">
+                <a href="https://github.com/tnye02/TN_Dev" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+        <!-- END GITHUB SECTION-->
+
+        <!-- Contact form starts hidden until contact button is clicked -->
+        <form action="https://formspree.io/f/mpzkdbjy" method="POST" class="form-popup" id="myForm"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert formspree endpoint in the action attribute -->
+            <label>name: </label>
+                <input type="text" placeholder="please enter your name here">
+            <label>email: </label>
+                <input type="text" id="Email" name="Email" placeholder="please enter your email here">
+            <label>message: </label>
+                <input type="text" id="Message" name="Message" placeholder="please write your message here">
+                <input type="submit" value="submit">
+                <button type="button" class="button2" onclick="closeForm()">close</button>
+        </form> 
+        <!-- END CONTACT SECTION -->
+
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <p>
+                <p class="center">&copy terry nye ii </p>
+            </p>
+        </footer>
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
