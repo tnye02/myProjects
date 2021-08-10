@@ -17,13 +17,17 @@ with conn:
                 col_fileName TEXT \
                 )")
     conn.commit()
+conn.close()
 
-#for loop to iterate through file names
-for files in fileList:
-    if files.endswith('.txt'): '''checks the .txt file'''
-        cur.execute("INSERT INTO tbl_txtFiles(col_fileName) VALUES (?)", \
-                    (files,))
-        print(files)
 
+conn = sqlite3.connect('txt_files.db')
+with conn:
+    cur = conn.cursor()
+    #for loop to iterate through file names
+    for files in fileList:
+        if files.endswith('.txt'):
+            cur.execute("INSERT INTO tbl_txtFiles(col_fileName) VALUES (?)", \
+                        (files,))
+            print(files)
 conn.close()
 
